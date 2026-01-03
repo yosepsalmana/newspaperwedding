@@ -12,33 +12,33 @@ interface GalleryImage {
 const galleryImages: GalleryImage[] = [
   {
     src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=800",
-    alt: "Couple portrait",
-    caption: "Summer 2023",
+    alt: "Potret pasangan",
+    caption: "Musim Panas 2023",
   },
   {
     src: "https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?w=800",
-    alt: "Engagement photo",
-    caption: "The proposal",
+    alt: "Foto pertunangan",
+    caption: "Lamaran",
   },
   {
     src: "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=800",
-    alt: "Together",
-    caption: "Our adventures",
+    alt: "Bersama",
+    caption: "Petualangan kami",
   },
   {
     src: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=800",
-    alt: "Romantic moment",
-    caption: "Spring 2024",
+    alt: "Momen romantis",
+    caption: "Musim Semi 2024",
   },
   {
     src: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800",
-    alt: "Candid shot",
-    caption: "At the beach",
+    alt: "Foto candid",
+    caption: "Di pantai",
   },
   {
     src: "https://images.unsplash.com/photo-1544078751-58fee2d8a03b?w=800",
-    alt: "Together forever",
-    caption: "Forever begins",
+    alt: "Bersama selamanya",
+    caption: "Selamanya dimulai",
   },
 ];
 
@@ -69,11 +69,11 @@ const GallerySection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <p className="caption-text mb-3">Photo Gallery</p>
+          <p className="caption-text mb-3">Galeri Foto</p>
           <div className="divider-double w-24 mx-auto mb-6" />
-          <h2 className="headline-secondary mb-4">Captured Moments</h2>
+          <h2 className="headline-secondary mb-4">Momen Terabadikan</h2>
           <p className="subheadline max-w-xl mx-auto">
-            A collection of memories from our journey together
+            Kumpulan kenangan dari perjalanan kami bersama
           </p>
         </motion.div>
 

@@ -12,18 +12,18 @@ interface GiftAccount {
 
 const giftAccounts: GiftAccount[] = [
   {
-    bankName: "First National Bank",
-    accountNumber: "1234-5678-9012-3456",
+    bankName: "Bank Central Asia (BCA)",
+    accountNumber: "1234-5678-9012",
     accountHolder: "Sarah Johnson",
   },
   {
-    bankName: "Pacific Trust",
-    accountNumber: "9876-5432-1098-7654",
+    bankName: "Bank Mandiri",
+    accountNumber: "9876-5432-1098",
     accountHolder: "Michael Thompson",
   },
 ];
 
-const physicalAddress = "789 Rose Avenue, Apt 12B, Riverside, CA 92503";
+const physicalAddress = "Jl. Mawar No. 789, Apt 12B, Jakarta Selatan 12345";
 
 const GiftSection = () => {
   const [copiedItem, setCopiedItem] = useState<string | null>(null);
@@ -37,13 +37,13 @@ const GiftSection = () => {
       await navigator.clipboard.writeText(text);
       setCopiedItem(label);
       toast({
-        title: "Copied to clipboard",
-        description: `${label} has been copied.`,
+        title: "Berhasil disalin",
+        description: `${label} telah disalin ke clipboard.`,
       });
       setTimeout(() => setCopiedItem(null), 2000);
     } catch (err) {
       toast({
-        title: "Failed to copy",
+        title: "Gagal menyalin",
         variant: "destructive",
       });
     }
@@ -58,12 +58,12 @@ const GiftSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <p className="caption-text mb-3">Classifieds</p>
+          <p className="caption-text mb-3">Iklan Baris</p>
           <div className="divider-double w-24 mx-auto mb-6" />
-          <h2 className="headline-secondary mb-4">Wedding Gifts</h2>
+          <h2 className="headline-secondary mb-4">Kado Pernikahan</h2>
           <p className="subheadline max-w-xl mx-auto">
-            Your presence is the greatest gift of all. However, if you wish to
-            honor us with a gift, here are our details.
+            Kehadiran Anda adalah hadiah terbesar bagi kami. Namun, jika Anda ingin 
+            memberikan kado, berikut adalah informasinya.
           </p>
         </motion.div>
 
@@ -84,24 +84,24 @@ const GiftSection = () => {
                     {account.accountNumber}
                   </p>
                   <p className="body-text text-sm text-ink-muted">
-                    {account.accountHolder}
+                    a.n. {account.accountHolder}
                   </p>
                 </div>
                 <button
                   onClick={() =>
-                    copyToClipboard(account.accountNumber, "Account number")
+                    copyToClipboard(account.accountNumber, "Nomor rekening")
                   }
                   className="btn-editorial-outline text-xs flex items-center gap-2 self-start md:self-center"
                 >
-                  {copiedItem === "Account number" ? (
+                  {copiedItem === "Nomor rekening" ? (
                     <>
                       <Check className="w-4 h-4" />
-                      Copied
+                      Tersalin
                     </>
                   ) : (
                     <>
                       <Copy className="w-4 h-4" />
-                      Copy
+                      Salin
                     </>
                   )}
                 </button>
@@ -117,23 +117,23 @@ const GiftSection = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="editorial-card"
         >
-          <p className="caption-text text-xs mb-3">For Physical Gifts</p>
+          <p className="caption-text text-xs mb-3">Untuk Kado Fisik</p>
           <div className="divider-thin mb-4" />
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <p className="font-display text-base text-ink">{physicalAddress}</p>
             <button
-              onClick={() => copyToClipboard(physicalAddress, "Address")}
+              onClick={() => copyToClipboard(physicalAddress, "Alamat")}
               className="btn-editorial-outline text-xs flex items-center gap-2 self-start md:self-center"
             >
-              {copiedItem === "Address" ? (
+              {copiedItem === "Alamat" ? (
                 <>
                   <Check className="w-4 h-4" />
-                  Copied
+                  Tersalin
                 </>
               ) : (
                 <>
                   <Copy className="w-4 h-4" />
-                  Copy Address
+                  Salin Alamat
                 </>
               )}
             </button>
@@ -147,7 +147,7 @@ const GiftSection = () => {
           className="text-center mt-8"
         >
           <p className="text-xs text-ink-muted italic">
-            With gratitude, Sarah & Michael
+            Dengan penuh rasa terima kasih, Sarah & Michael
           </p>
         </motion.div>
       </div>

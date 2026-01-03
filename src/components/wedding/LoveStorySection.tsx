@@ -9,34 +9,34 @@ interface TimelineEvent {
 
 const timelineEvents: TimelineEvent[] = [
   {
-    date: "March 2019",
-    title: "The First Encounter",
+    date: "Maret 2019",
+    title: "Pertemuan Pertama",
     description:
-      "A chance meeting at a mutual friend's gathering. Little did they know, this would be the beginning of something beautiful.",
+      "Pertemuan tak terduga di acara teman bersama. Tak mereka sangka, ini akan menjadi awal dari sesuatu yang indah.",
   },
   {
-    date: "June 2019",
-    title: "The First Date",
+    date: "Juni 2019",
+    title: "Kencan Pertama",
     description:
-      "A quiet dinner turned into hours of conversation under the stars. It was clear this was more than just friendship.",
+      "Makan malam sederhana berubah menjadi percakapan berjam-jam di bawah bintang. Jelas ini lebih dari sekadar pertemanan.",
   },
   {
-    date: "December 2020",
-    title: "Moving In Together",
+    date: "Desember 2020",
+    title: "Tinggal Bersama",
     description:
-      "Taking the next step, they made a home together, learning the art of compromise and the beauty of everyday love.",
+      "Mengambil langkah selanjutnya, mereka membangun rumah bersama, belajar seni kompromi dan keindahan cinta sehari-hari.",
   },
   {
-    date: "February 2024",
-    title: "The Proposal",
+    date: "Februari 2024",
+    title: "Lamaran",
     description:
-      "On a winter evening, under the same stars where they had their first date, he asked the question that changed everything.",
+      "Di malam musim dingin, di bawah bintang yang sama saat kencan pertama, ia mengajukan pertanyaan yang mengubah segalanya.",
   },
   {
-    date: "June 2025",
-    title: "The Wedding Day",
+    date: "Juni 2025",
+    title: "Hari Pernikahan",
     description:
-      "And so, surrounded by loved ones, they begin their forever. A new chapter in their greatest love story.",
+      "Dan begitulah, dikelilingi orang-orang tercinta, mereka memulai keabadian. Babak baru dalam kisah cinta terbesar mereka.",
   },
 ];
 
@@ -55,11 +55,11 @@ const LoveStorySection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <p className="caption-text mb-3">Feature Story</p>
+          <p className="caption-text mb-3">Liputan Khusus</p>
           <div className="divider-double w-24 mx-auto mb-6" />
-          <h2 className="headline-secondary mb-4">Our Love Story</h2>
+          <h2 className="headline-secondary mb-4">Kisah Cinta Kami</h2>
           <p className="subheadline max-w-xl mx-auto">
-            The extraordinary journey of two ordinary hearts finding each other
+            Perjalanan luar biasa dari dua hati biasa yang saling menemukan
           </p>
         </motion.div>
 

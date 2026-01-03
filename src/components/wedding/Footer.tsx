@@ -29,19 +29,19 @@ const Footer = () => {
           </div>
 
           {/* Date */}
-          <p className="font-display text-lg mb-2">June 21, 2025</p>
+          <p className="font-display text-lg mb-2">21 Juni 2025</p>
 
           {/* Divider */}
           <div className="w-24 h-px bg-paper/30 mx-auto my-6" />
 
           {/* Tagline */}
           <p className="text-sm text-paper/60 tracking-widest uppercase mb-4">
-            Printed with love
+            Dicetak dengan cinta
           </p>
 
           {/* Credits */}
           <p className="text-xs text-paper/40">
-            The Wedding Chronicle • Special Edition
+            The Wedding Chronicle • Edisi Khusus
           </p>
         </motion.div>
       </div>

@@ -19,28 +19,28 @@ const WishesSection = ({ wishes }: WishesSectionProps) => {
 
   const sampleWishes: Wish[] = [
     {
-      name: "Amanda & James",
+      name: "Amanda & Budi",
       message:
-        "Wishing you both a lifetime of love, laughter, and happiness. May your journey together be filled with beautiful moments!",
-      date: "January 15, 2025",
+        "Semoga pernikahan ini membawa kebahagiaan selamanya. Semoga perjalanan kalian berdua dipenuhi momen-momen indah!",
+      date: "15 Januari 2025",
     },
     {
-      name: "The Roberts Family",
+      name: "Keluarga Santoso",
       message:
-        "Congratulations on finding your perfect match! May your love story continue to inspire those around you.",
-      date: "January 12, 2025",
+        "Selamat menempuh hidup baru! Semoga kisah cinta kalian terus menginspirasi semua orang di sekitar.",
+      date: "12 Januari 2025",
     },
     {
-      name: "Uncle George",
+      name: "Om Hendra",
       message:
-        "So thrilled for you both! Wishing you endless adventures and a home filled with love and joy.",
-      date: "January 10, 2025",
+        "Sangat bahagia untuk kalian berdua! Semoga rumah tangga kalian dipenuhi cinta dan kegembiraan.",
+      date: "10 Januari 2025",
     },
     {
-      name: "Cousin Emily",
+      name: "Tante Rina",
       message:
-        "Two beautiful souls becoming one. May your marriage be as wonderful as you both are!",
-      date: "January 8, 2025",
+        "Dua jiwa indah menjadi satu. Semoga pernikahan kalian seindah kalian berdua!",
+      date: "8 Januari 2025",
     },
   ];
 
@@ -55,11 +55,11 @@ const WishesSection = ({ wishes }: WishesSectionProps) => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <p className="caption-text mb-3">Letters to the Editor</p>
+          <p className="caption-text mb-3">Surat Pembaca</p>
           <div className="divider-double w-24 mx-auto mb-6" />
-          <h2 className="headline-secondary mb-4">Wishes & Blessings</h2>
+          <h2 className="headline-secondary mb-4">Ucapan & Doa</h2>
           <p className="subheadline max-w-xl mx-auto">
-            Heartfelt messages from our beloved family and friends
+            Pesan-pesan tulus dari keluarga dan sahabat tercinta
           </p>
         </motion.div>
 
@@ -96,7 +96,7 @@ const WishesSection = ({ wishes }: WishesSectionProps) => {
             className="text-center py-12"
           >
             <p className="body-text text-ink-muted">
-              Be the first to leave your wishes for the couple!
+              Jadilah yang pertama memberikan ucapan untuk mempelai!
             </p>
           </motion.div>
         )}
