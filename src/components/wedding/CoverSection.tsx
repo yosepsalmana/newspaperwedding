@@ -44,7 +44,7 @@ const CoverSection = ({ onOpen }: CoverSectionProps) => {
     }, 800);
   };
 
-  const currentDate = new Date().toLocaleDateString("en-US", {
+  const currentDate = new Date().toLocaleDateString("id-ID", {
     weekday: "long",
     year: "numeric",
     month: "long",
@@ -69,8 +69,8 @@ const CoverSection = ({ onOpen }: CoverSectionProps) => {
               className="flex justify-between items-center text-[10px] md:text-xs text-ink-muted uppercase tracking-wider mb-2 border-b border-ink pb-2"
             >
               <span>Vol. MMXXV • No. 621</span>
-              <span>Special Wedding Edition</span>
-              <span>Price: Priceless</span>
+              <span>Edisi Khusus Pernikahan</span>
+              <span>Harga: Tak Ternilai</span>
             </motion.div>
 
             {/* Masthead */}
@@ -84,7 +84,7 @@ const CoverSection = ({ onOpen }: CoverSectionProps) => {
                 The Wedding Times
               </h1>
               <p className="text-[10px] md:text-xs text-ink-muted mt-2 tracking-[0.2em] uppercase">
-                "All the Love That's Fit to Print" • Established in the Year of Love
+                "Semua Cinta yang Layak Dicetak" • Didirikan di Tahun Cinta
               </p>
             </motion.div>
 
@@ -107,30 +107,30 @@ const CoverSection = ({ onOpen }: CoverSectionProps) => {
             >
               <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
                 <span className="text-xs md:text-sm font-bold uppercase tracking-widest animate-pulse">
-                  ⚡ Breaking News ⚡
+                  ⚡ Berita Terkini ⚡
                 </span>
                 <div className="flex items-center gap-3 md:gap-4 font-mono">
                   <div className="text-center">
                     <span className="text-xl md:text-3xl font-bold">{countdown.days}</span>
-                    <span className="text-[10px] md:text-xs block uppercase tracking-wider">Days</span>
+                    <span className="text-[10px] md:text-xs block uppercase tracking-wider">Hari</span>
                   </div>
                   <span className="text-xl md:text-2xl font-bold">:</span>
                   <div className="text-center">
                     <span className="text-xl md:text-3xl font-bold">{countdown.hours}</span>
-                    <span className="text-[10px] md:text-xs block uppercase tracking-wider">Hours</span>
+                    <span className="text-[10px] md:text-xs block uppercase tracking-wider">Jam</span>
                   </div>
                   <span className="text-xl md:text-2xl font-bold">:</span>
                   <div className="text-center">
                     <span className="text-xl md:text-3xl font-bold">{countdown.minutes}</span>
-                    <span className="text-[10px] md:text-xs block uppercase tracking-wider">Min</span>
+                    <span className="text-[10px] md:text-xs block uppercase tracking-wider">Menit</span>
                   </div>
                   <span className="text-xl md:text-2xl font-bold">:</span>
                   <div className="text-center">
                     <span className="text-xl md:text-3xl font-bold">{countdown.seconds}</span>
-                    <span className="text-[10px] md:text-xs block uppercase tracking-wider">Sec</span>
+                    <span className="text-[10px] md:text-xs block uppercase tracking-wider">Detik</span>
                   </div>
                 </div>
-                <span className="text-[10px] md:text-xs uppercase tracking-wider">Until "I Do"</span>
+                <span className="text-[10px] md:text-xs uppercase tracking-wider">Menuju "Saya Bersedia"</span>
               </div>
             </motion.div>
 
@@ -142,13 +142,13 @@ const CoverSection = ({ onOpen }: CoverSectionProps) => {
               className="text-center py-4 border-b border-ink"
             >
               <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-ink-muted mb-2">
-                Wedding Announcement • Save the Date
+                Pengumuman Pernikahan • Simpan Tanggalnya
               </p>
               <h2 className="font-display text-5xl md:text-7xl lg:text-8xl font-black uppercase text-ink leading-none tracking-tight">
                 SARAH & MICHAEL
               </h2>
               <p className="font-display text-xl md:text-3xl italic text-ink-light mt-2">
-                "A Love Story Worth Printing"
+                "Kisah Cinta yang Layak Dicetak"
               </p>
             </motion.div>
 
@@ -160,15 +160,15 @@ const CoverSection = ({ onOpen }: CoverSectionProps) => {
               className="grid grid-cols-3 border-b border-ink text-center"
             >
               <div className="py-3 border-r border-ink">
-                <p className="text-[10px] md:text-xs uppercase tracking-wider text-ink-muted">The Ceremony</p>
-                <p className="font-display text-sm md:text-lg font-bold text-ink">June 21, 2025</p>
+                <p className="text-[10px] md:text-xs uppercase tracking-wider text-ink-muted">Upacara</p>
+                <p className="font-display text-sm md:text-lg font-bold text-ink">21 Juni 2025</p>
               </div>
               <div className="py-3 border-r border-ink">
-                <p className="text-[10px] md:text-xs uppercase tracking-wider text-ink-muted">Time</p>
-                <p className="font-display text-sm md:text-lg font-bold text-ink">2:00 PM</p>
+                <p className="text-[10px] md:text-xs uppercase tracking-wider text-ink-muted">Waktu</p>
+                <p className="font-display text-sm md:text-lg font-bold text-ink">14:00 WIB</p>
               </div>
               <div className="py-3">
-                <p className="text-[10px] md:text-xs uppercase tracking-wider text-ink-muted">Venue</p>
+                <p className="text-[10px] md:text-xs uppercase tracking-wider text-ink-muted">Tempat</p>
                 <p className="font-display text-sm md:text-lg font-bold text-ink">Grand Estate</p>
               </div>
             </motion.div>
@@ -186,22 +186,22 @@ const CoverSection = ({ onOpen }: CoverSectionProps) => {
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-ink/30" />
                   <img 
                     src="https://images.unsplash.com/photo-1519741497674-611481863552?w=300&h=400&fit=crop" 
-                    alt="The Bride" 
+                    alt="Mempelai Wanita" 
                     className="w-full h-full object-cover grayscale"
                   />
                 </div>
                 <p className="text-[8px] md:text-[10px] text-ink-muted text-center uppercase tracking-wider leading-tight">
-                  The Beautiful Bride
+                  Mempelai Wanita
                 </p>
                 <div className="bg-ink-muted/20 aspect-square relative overflow-hidden border border-ink">
                   <img 
                     src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=200&h=200&fit=crop" 
-                    alt="Engagement Ring" 
+                    alt="Cincin Pertunangan" 
                     className="w-full h-full object-cover grayscale"
                   />
                 </div>
                 <p className="text-[8px] md:text-[10px] text-ink-muted text-center uppercase tracking-wider leading-tight">
-                  The Ring
+                  Cincin
                 </p>
               </div>
 
@@ -211,17 +211,17 @@ const CoverSection = ({ onOpen }: CoverSectionProps) => {
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-ink/20" />
                   <img 
                     src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?w=600&h=750&fit=crop" 
-                    alt="The Happy Couple" 
+                    alt="Pasangan Bahagia" 
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-ink/80 py-2 px-3">
                     <p className="text-paper text-[10px] md:text-xs text-center uppercase tracking-wider">
-                      Sarah & Michael — Together Forever
+                      Sarah & Michael — Bersama Selamanya
                     </p>
                   </div>
                 </div>
                 <p className="text-[10px] md:text-xs text-ink-muted text-center mt-2 italic">
-                  Photo: Exclusive portrait of the happy couple on their engagement day
+                  Foto: Potret eksklusif pasangan bahagia di hari pertunangan mereka
                 </p>
               </div>
 
@@ -230,22 +230,22 @@ const CoverSection = ({ onOpen }: CoverSectionProps) => {
                 <div className="bg-ink-muted/20 aspect-[3/4] relative overflow-hidden border border-ink">
                   <img 
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop" 
-                    alt="The Groom" 
+                    alt="Mempelai Pria" 
                     className="w-full h-full object-cover grayscale"
                   />
                 </div>
                 <p className="text-[8px] md:text-[10px] text-ink-muted text-center uppercase tracking-wider leading-tight">
-                  The Handsome Groom
+                  Mempelai Pria
                 </p>
                 <div className="bg-ink-muted/20 aspect-square relative overflow-hidden border border-ink">
                   <img 
                     src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=200&h=200&fit=crop" 
-                    alt="Wedding Venue" 
+                    alt="Tempat Acara" 
                     className="w-full h-full object-cover grayscale"
                   />
                 </div>
                 <p className="text-[8px] md:text-[10px] text-ink-muted text-center uppercase tracking-wider leading-tight">
-                  The Venue
+                  Venue
                 </p>
               </div>
             </motion.div>
@@ -259,34 +259,34 @@ const CoverSection = ({ onOpen }: CoverSectionProps) => {
             >
               <div className="border-b md:border-b-0 md:border-r border-ink pb-4 md:pb-0 md:pr-4">
                 <h3 className="font-display text-sm md:text-base font-bold uppercase text-ink mb-2 border-b border-ink-muted pb-1">
-                  Inside This Edition
+                  Dalam Edisi Ini
                 </h3>
                 <ul className="text-[10px] md:text-xs text-ink-light space-y-1">
-                  <li>• Our Love Story — Page 2</li>
-                  <li>• Meet the Bride & Groom — Page 3</li>
-                  <li>• Event Details — Page 4</li>
-                  <li>• Photo Gallery — Page 5</li>
-                  <li>• RSVP Information — Page 6</li>
+                  <li>• Kisah Cinta Kami — Halaman 2</li>
+                  <li>• Profil Mempelai — Halaman 3</li>
+                  <li>• Detail Acara — Halaman 4</li>
+                  <li>• Galeri Foto — Halaman 5</li>
+                  <li>• Informasi RSVP — Halaman 6</li>
                 </ul>
               </div>
               <div className="border-b md:border-b-0 md:border-r border-ink pb-4 md:pb-0 md:pr-4">
                 <h3 className="font-display text-sm md:text-base font-bold uppercase text-ink mb-2 border-b border-ink-muted pb-1">
-                  How They Met
+                  Awal Pertemuan
                 </h3>
                 <p className="text-[10px] md:text-xs text-ink-light leading-relaxed">
-                  In a twist of fate that could only be described as destiny, two strangers crossed paths 
-                  on a rainy afternoon. What began as a chance encounter blossomed into an extraordinary 
-                  love story that continues to inspire all who witness it.
+                  Dalam kejutan takdir yang hanya bisa digambarkan sebagai jodoh, dua orang asing 
+                  bertemu di sore yang hujan. Apa yang dimulai sebagai pertemuan kebetulan berkembang 
+                  menjadi kisah cinta luar biasa yang terus menginspirasi semua yang menyaksikannya.
                 </p>
               </div>
               <div>
                 <h3 className="font-display text-sm md:text-base font-bold uppercase text-ink mb-2 border-b border-ink-muted pb-1">
-                  From the Editors
+                  Dari Redaksi
                 </h3>
                 <p className="text-[10px] md:text-xs text-ink-light leading-relaxed">
-                  We are delighted to announce this special edition celebrating the union of two 
-                  remarkable individuals. Their journey together promises to be filled with love, 
-                  laughter, and endless adventures.
+                  Kami dengan senang hati mengumumkan edisi khusus ini yang merayakan penyatuan 
+                  dua individu yang luar biasa. Perjalanan mereka bersama akan dipenuhi dengan cinta, 
+                  tawa, dan petualangan tanpa akhir.
                 </p>
               </div>
             </motion.div>
@@ -299,7 +299,7 @@ const CoverSection = ({ onOpen }: CoverSectionProps) => {
               className="text-center py-4 border-b border-ink"
             >
               <p className="font-display text-lg md:text-2xl italic text-ink-light">
-                "Two souls with but a single thought, two hearts that beat as one."
+                "Dua jiwa dengan satu pikiran, dua hati yang berdenyut sebagai satu."
               </p>
               <p className="text-[10px] md:text-xs text-ink-muted mt-1 uppercase tracking-wider">
                 — John Keats
@@ -317,10 +317,10 @@ const CoverSection = ({ onOpen }: CoverSectionProps) => {
                 onClick={handleOpen}
                 className="bg-ink text-paper px-8 md:px-12 py-3 md:py-4 font-display text-sm md:text-lg uppercase tracking-[0.2em] font-bold hover:bg-ink-light transition-colors duration-300 border-2 border-ink"
               >
-                Open Invitation
+                Buka Undangan
               </button>
               <p className="mt-3 text-[10px] md:text-xs text-ink-muted uppercase tracking-[0.15em]">
-                Click above to continue reading • Exclusive content inside
+                Klik untuk melanjutkan membaca • Konten eksklusif di dalam
               </p>
             </motion.div>
 
@@ -333,9 +333,9 @@ const CoverSection = ({ onOpen }: CoverSectionProps) => {
             >
               <span>© 2025 The Wedding Times</span>
               <span className="hidden md:inline">•</span>
-              <span>All Rights Reserved</span>
+              <span>Hak Cipta Dilindungi</span>
               <span className="hidden md:inline">•</span>
-              <span>Printed with Love</span>
+              <span>Dicetak dengan Cinta</span>
               <span className="hidden md:inline">•</span>
               <span>S & M</span>
             </motion.div>

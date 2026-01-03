@@ -32,7 +32,7 @@ const RSVPSection = ({ onSubmit }: RSVPSectionProps) => {
     e.preventDefault();
     if (!formData.name || !formData.attendance) {
       toast({
-        title: "Please fill in all required fields",
+        title: "Mohon lengkapi semua kolom yang wajib diisi",
         variant: "destructive",
       });
       return;
@@ -40,8 +40,8 @@ const RSVPSection = ({ onSubmit }: RSVPSectionProps) => {
     onSubmit(formData);
     setSubmitted(true);
     toast({
-      title: "Thank you for your response!",
-      description: "We can't wait to celebrate with you.",
+      title: "Terima kasih atas respons Anda!",
+      description: "Kami tidak sabar untuk merayakannya bersama Anda.",
     });
   };
 
@@ -54,11 +54,11 @@ const RSVPSection = ({ onSubmit }: RSVPSectionProps) => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <p className="caption-text mb-3">Répondez S'il Vous Plaît</p>
+          <p className="caption-text mb-3">Konfirmasi Kehadiran</p>
           <div className="divider-double w-24 mx-auto mb-6" />
           <h2 className="headline-secondary mb-4">RSVP</h2>
           <p className="subheadline max-w-xl mx-auto">
-            Kindly respond by May 21, 2025
+            Mohon konfirmasi kehadiran sebelum 21 Mei 2025
           </p>
         </motion.div>
 
@@ -72,7 +72,7 @@ const RSVPSection = ({ onSubmit }: RSVPSectionProps) => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block caption-text text-xs mb-2">
-                  Your Name *
+                  Nama Lengkap *
                 </label>
                 <input
                   type="text"
@@ -81,14 +81,14 @@ const RSVPSection = ({ onSubmit }: RSVPSectionProps) => {
                     setFormData({ ...formData, name: e.target.value })
                   }
                   className="input-editorial"
-                  placeholder="Enter your full name"
+                  placeholder="Masukkan nama lengkap Anda"
                   required
                 />
               </div>
 
               <div>
                 <label className="block caption-text text-xs mb-2">
-                  Will you be attending? *
+                  Apakah Anda akan hadir? *
                 </label>
                 <div className="flex gap-4">
                   <label className="flex items-center gap-2 cursor-pointer">
@@ -105,7 +105,7 @@ const RSVPSection = ({ onSubmit }: RSVPSectionProps) => {
                       }
                       className="w-4 h-4 accent-ink"
                     />
-                    <span className="body-text">Joyfully Accept</span>
+                    <span className="body-text">Dengan Senang Hati Hadir</span>
                   </label>
                   <label className="flex items-center gap-2 cursor-pointer">
                     <input
@@ -121,7 +121,7 @@ const RSVPSection = ({ onSubmit }: RSVPSectionProps) => {
                       }
                       className="w-4 h-4 accent-ink"
                     />
-                    <span className="body-text">Regretfully Decline</span>
+                    <span className="body-text">Mohon Maaf Tidak Bisa</span>
                   </label>
                 </div>
               </div>
@@ -133,7 +133,7 @@ const RSVPSection = ({ onSubmit }: RSVPSectionProps) => {
                   exit={{ opacity: 0, height: 0 }}
                 >
                   <label className="block caption-text text-xs mb-2">
-                    Number of Guests
+                    Jumlah Tamu
                   </label>
                   <select
                     value={formData.guests}
@@ -144,7 +144,7 @@ const RSVPSection = ({ onSubmit }: RSVPSectionProps) => {
                   >
                     {[1, 2, 3, 4, 5].map((num) => (
                       <option key={num} value={num}>
-                        {num} {num === 1 ? "Guest" : "Guests"}
+                        {num} Orang
                       </option>
                     ))}
                   </select>
@@ -153,7 +153,7 @@ const RSVPSection = ({ onSubmit }: RSVPSectionProps) => {
 
               <div>
                 <label className="block caption-text text-xs mb-2">
-                  Your Wishes & Message
+                  Ucapan & Doa untuk Mempelai
                 </label>
                 <textarea
                   value={formData.wishes}
@@ -162,13 +162,13 @@ const RSVPSection = ({ onSubmit }: RSVPSectionProps) => {
                   }
                   rows={4}
                   className="input-editorial resize-none"
-                  placeholder="Share your heartfelt wishes for the couple..."
+                  placeholder="Sampaikan ucapan dan doa terbaik Anda untuk mempelai..."
                 />
               </div>
 
               <div className="text-center pt-4">
                 <button type="submit" className="btn-editorial">
-                  Submit Response
+                  Kirim Konfirmasi
                 </button>
               </div>
             </form>
@@ -179,10 +179,9 @@ const RSVPSection = ({ onSubmit }: RSVPSectionProps) => {
               className="text-center py-8"
             >
               <div className="font-display text-4xl mb-4">❧</div>
-              <h3 className="headline-tertiary mb-4">Thank You!</h3>
+              <h3 className="headline-tertiary mb-4">Terima Kasih!</h3>
               <p className="body-text">
-                Your response has been recorded. We look forward to celebrating
-                with you!
+                Respons Anda telah tercatat. Kami menantikan kehadiran Anda!
               </p>
             </motion.div>
           )}

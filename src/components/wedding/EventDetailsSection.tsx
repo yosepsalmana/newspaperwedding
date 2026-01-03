@@ -33,11 +33,11 @@ const EventCard = ({
     const endDate = new Date("2025-06-21T23:00:00");
     
     const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
-      `${title} - Sarah & Michael's Wedding`
+      `${title} - Pernikahan Sarah & Michael`
     )}&dates=${startDate.toISOString().replace(/-|:|\.\d\d\d/g, "")}/${endDate
       .toISOString()
       .replace(/-|:|\.\d\d\d/g, "")}&details=${encodeURIComponent(
-      `Join us for ${title.toLowerCase()} at ${venue}`
+      `Bergabunglah bersama kami untuk ${title.toLowerCase()} di ${venue}`
     )}&location=${encodeURIComponent(address)}`;
 
     window.open(googleCalendarUrl, "_blank");
@@ -81,13 +81,13 @@ const EventCard = ({
 
         <div className="flex flex-wrap gap-3">
           <button onClick={addToCalendar} className="btn-editorial-outline text-xs">
-            Add to Calendar
+            Tambah ke Kalender
           </button>
           <button
             onClick={() => setShowMap(true)}
             className="btn-editorial-outline text-xs"
           >
-            View Location
+            Lihat Lokasi
           </button>
         </div>
       </motion.div>
@@ -136,7 +136,7 @@ const EventCard = ({
               rel="noopener noreferrer"
               className="btn-editorial mt-4 text-xs"
             >
-              Open in Google Maps
+              Buka di Google Maps
             </a>
           </motion.div>
         </motion.div>
@@ -160,30 +160,30 @@ const EventDetailsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <p className="caption-text mb-3">Announcements</p>
+          <p className="caption-text mb-3">Pengumuman</p>
           <div className="divider-double w-24 mx-auto mb-6" />
-          <h2 className="headline-secondary mb-4">Event Details</h2>
+          <h2 className="headline-secondary mb-4">Detail Acara</h2>
           <p className="subheadline max-w-xl mx-auto">
-            Join us in celebrating this joyous occasion
+            Bergabunglah bersama kami merayakan momen bahagia ini
           </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-6 md:gap-8">
           <EventCard
-            title="The Ceremony"
-            date="Saturday, June 21, 2025"
-            time="2:00 PM"
-            venue="St. Mary's Chapel"
-            address="123 Chapel Lane, Riverside, CA 92501"
+            title="Akad Nikah"
+            date="Sabtu, 21 Juni 2025"
+            time="14:00 WIB"
+            venue="Masjid Al-Hikmah"
+            address="Jl. Raya No. 123, Jakarta Selatan 12345"
             mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.0123456789!2d-117.3961!3d33.9533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDU3JzEyLjAiTiAxMTfCsDIzJzQ2LjAiVw!5e0!3m2!1sen!2sus!4v1234567890"
             delay={0.2}
           />
           <EventCard
-            title="The Reception"
-            date="Saturday, June 21, 2025"
-            time="5:00 PM"
+            title="Resepsi"
+            date="Sabtu, 21 Juni 2025"
+            time="17:00 WIB"
             venue="Grand Estate Gardens"
-            address="456 Garden Boulevard, Riverside, CA 92502"
+            address="Jl. Garden Boulevard No. 456, Jakarta Selatan 12346"
             mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.0123456789!2d-117.3961!3d33.9533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDU3JzEyLjAiTiAxMTfCsDIzJzQ2LjAiVw!5e0!3m2!1sen!2sus!4v1234567890"
             delay={0.4}
           />
